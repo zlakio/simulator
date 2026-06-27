@@ -5,7 +5,7 @@ import axios from "axios";
 import Link from "next/link";
 import { THRESHOLDS, getAlerts } from "../simulation/page";
 
-const BASE_URL = "http://10.190.10.155:5000";
+const BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:5000";
 
 const flattenTelemetry = (data) => ({
   time: new Date().toLocaleTimeString(),

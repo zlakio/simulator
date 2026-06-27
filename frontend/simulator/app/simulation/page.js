@@ -17,7 +17,7 @@ import {
 
 const bebas = Bebas_Neue({ subsets: ["latin"], weight: "400" });
 
-const BASE_URL = "http://10.190.10.155:5000";
+const BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:5000";
 
 /* ── THRESHOLDS ── */
 export const THRESHOLDS = {
